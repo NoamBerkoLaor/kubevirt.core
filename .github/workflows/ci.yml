@@ -28,8 +28,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
-          # Pin on 3.14: ansible-core does not support above Python 3.14 yet.
-          python-version: "3.14"
+          python-version: 3.x
           cache: pip
 
       - name: Install tox
@@ -63,8 +62,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
-          # Pin on 3.14: ansible-core does not support above Python 3.14 yet.
-          python-version: "3.14"
+          python-version: 3.x
           cache: pip
 
       - name: Install yamllint, ansible, shellcheck
